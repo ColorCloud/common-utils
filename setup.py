@@ -13,8 +13,7 @@ setup(
     author='lishiwei',
     author_email='shiwei.lee@163.com',
     install_requires=REQUIREMENTS,
-    # url='https://www.python.org/sigs/distutils-sig/',
-    # packages=['django_redis', 'gameplaza', 'nginx_uwsgi_conf', 'plaza',
-    #          'statistic_info'],
+    url='https://github.com/ColorCloud/common-utils/',
+    # packages=[],
     packages=find_packages()
 )
