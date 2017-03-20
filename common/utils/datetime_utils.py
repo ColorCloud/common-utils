@@ -33,14 +33,10 @@ def drange(start, stop, days=0, seconds=0, microseconds=0, milliseconds=0, minut
 
     value = start
     if delta.total_seconds() > 0:
-        if start > stop:
-            raise_error(ValueError("start > stop, when steps > 0"))
         while value < stop:
             yield value
             value += delta
     else:
-        if start < stop:
-            raise_error(ValueError("start < stop, when steps < 0"))
         while value > stop:
             yield value
             value += delta
