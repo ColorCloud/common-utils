@@ -31,7 +31,8 @@ def drange(start, stop, days=0, seconds=0, microseconds=0, milliseconds=0, minut
         raise_error(
             ValueError("bad value for steps(days, seconds, microseconds, milliseconds, minutes, hours, weeks)"))
 
-    value = start
+    value = datetime(start.year, start.month, start.day) if type(start) == date else start
+    stop = datetime(stop.year, stop.month, stop.day) if type(stop) == date else stop
     if delta.total_seconds() > 0:
         while value < stop:
             yield value
