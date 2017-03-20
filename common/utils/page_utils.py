@@ -1,8 +1,16 @@
+'''
+Created on 2017-03-20
+
+@author: lishiwei
+'''
+from math import ceil
+
+
 def paginate(data, per_page):
     """Paginate one list, return one iterator
- 
+
     params:
-      data: paginated data
+      data    : paginated data
       per_page: page size of per page
 
     returns: one iterator
