@@ -4,6 +4,7 @@ Created on 2017-03-20
 @author: lishiwei
 '''
 from math import ceil
+from .errors import raise_error
 
 
 def paginate(data, per_page):
@@ -16,7 +17,7 @@ def paginate(data, per_page):
     returns: one iterator
     """
     if type(data) != list:
-        return ValueError("bad value: not list")
+        raise_error(TypeError("bad type, not list"))
 
     total = len(data)
     page_count = ceil(total/per_page)

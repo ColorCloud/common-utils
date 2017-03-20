@@ -1,5 +1,5 @@
 '''
-Created on 2017年3月20日
+Created on 2017-03-20
 
 @author: lishiwei
 '''
